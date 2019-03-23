@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Final Project - Abdul Aziz Laia</title>
+  <link href="img/home.png" rel="shortcut icon" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--CSS -->
+  <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+  <link rel="stylesheet" type="text/css" href="css/modal.css">
+  <link rel="stylesheet" type="text/css" href="css/slideshow.css">
+
+</head>
+<body id="page-top">
+<!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" id="main">
+    <div class="container menu">
+      <a class="navbar-brand js-scroll-trigger" href="#main" style="margin-left: 20px;">Final Project</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#info">Page Info</a>
+          <a class="nav-item nav-link" href="#more">More</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- akhir navbar -->
+
+<!-- Jumbotron -->
+<section id="main">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Final Project <span>JavaScript</span><br> Development <span>Course</span></h1>
+      <hr style=" width:100px; border: 1px solid white; ">
+      
+<!-- Modal Login -->
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; border-radius: 15px;">Submit Feedback</button>
+      <div id="id01" class="modal">
+                
+        <form class="modal-content animate" action="https://formspree.io/mrzouzho@email.com" method="POST">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img/feedback.png" alt="Avatar" class="user">
+          </div>
+
+          <div class="container">
+            <label for="email"><b>E-Mail</b></label>
+            <input type="email" name="_replyto" placeholder="Your E-Mail.." required autocomplete="off">
+
+            <label for="name"><b>Feedback</b></label>
+            <input type="text" name="name" placeholder="Your feedback.." required autocomplete="off">
+                      
+            <input type="submit" style="width: 100px; background-color: blue; color: yellow;" value="Send"><br>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1;">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+<!-- End Modal Login -->
+    </div>
+  </div>
+</section>
+<!-- Akhir Jumbotron -->
+
+<!-- info panel -->
+<section id="info">
+  <div class="row justify-content-center">
+    <div class="col-10 info-panel">
+      <div class="row">
+        <div class="col-lg">
+          <img src="img/about.png" alt="application" class="float-left">
+          <h4>About Me</h4>
+          <a href="about.html" style="text-decoration: none;">Klick here..</a>
+        </div>
+        <div class="col-lg">
+          <img src="img/address.png" alt="mulmed" class="float-left">
+          <h4>My Address</h4>
+          <a href="about.html" style="text-decoration: none;">Klick here..</a>
+        </div>
+        <div class="col-lg">
+          <img src="img/contact.png" alt="design" class="float-left">
+          <h4>Sosial Media</h4>
+          <a href="contact.html" style="text-decoration: none;">Klick here..</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- akhir info panel --><br>
+
+<!-- interest -->
+<section id="more">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 align="center">I'm interested in :</h1>
+        <hr style=" width:100px; border: 1px solid blue; ">
+      </div>
+    </div>
+  </div>
+
+  <div align="center">
+    <div class="contain">
+      <div class="row">
+        <div class="col-sm">
+          <img src="img/UI.png" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">User Interface</div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <img src="img/UX.png" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">User Experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>(!)arahkan kursor ke gambar..</p>
+  </div><br>
+<!-- end -->
+
+<!-- like -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 align="center">This website is using :</h1>
+        <hr style=" width:100px; border: 1px solid blue; ">
+      </div>
+    </div>
+  </div>
+
+  <div class="slideshow-container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/bootstrap.png" style="width:700px; height: 230px;" class="imgs">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/javascript.png" style="width:700px; height: 230px;" class="imgs">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/css.png" style="width:700px; height: 230px;" class="imgs">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+</section>
+<!-- end -->
+
+<!-- Footer -->
+  <div class="row footer">
+    <div class="col text-center">
+      <p>&copy; 2019 - Powered by Abdul Aziz Laia</p>
+    </div>
+  </div>
+<!-- akhir footer -->
+
+<!-- Optional JavaScript -->
+  <script type="text/javascript" src="proses.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- End -->
+</body>
+</html>
